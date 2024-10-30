@@ -1,0 +1,540 @@
+/* tipografia */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: auto;
+}
+
+.contenedorPersonasEmpresa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  padding: 5px;
+  gap: 5px;
+}
+
+.contenedorPersonasEmpresa nav a,
+.contenedorPersonasEmpresa nav span {
+  color: #614ad9;
+  font-weight: bold;
+}
+
+.contenedorPersonasEmpresa nav a:hover {
+  border-bottom: 2px solid #614ad9;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contenedorInputModoNoche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contenedorInputModoNoche input {
+  width: 450px;
+  height: 40px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+
+.contenedorInputModoNoche button {
+  background-color: white;
+  border: none;
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.contenedorInputModoNoche img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Inicio header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(19, 22, 28);
+  background: linear-gradient(90deg,
+      rgba(19, 22, 28, 1) 0%,
+      rgba(97, 74, 217, 1) 35%,
+      rgba(144, 126, 235, 1) 100%);
+  padding: 20px;
+  margin: 10px 0px;
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+header nav a {
+  color: #f6f5f5;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contenedorNavBotonesHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.botonHazteCliente,
+.botonIngresar {
+  height: auto;
+  width: auto;
+  padding: 8px;
+  font-size: 18px;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+  box-shadow: 1px 3px 3px rgb(0, 0, 0, 0.3);
+}
+
+.botonHazteCliente a {
+  color: #f6f5f5;
+}
+
+.botonHazteCliente {
+  background: rgb(255, 107, 53);
+  background: linear-gradient(90deg,
+      rgba(255, 107, 53, 1) 0%,
+      rgba(204, 86, 42, 1) 35%,
+      rgba(153, 64, 32, 1) 100%);
+}
+
+.botonIngresar a {
+  color: #614ad9;
+}
+
+.botonIngresar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.botonIngresar img {
+  width: 25px;
+  height: 25px;
+}
+
+/* Fin header */
+
+
+/* Inicio main */
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 610px;
+  position: relative;
+}
+
+.mainCredit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.mainCredit h1 {
+  font-size: 50px;
+}
+
+.mainCredit p {
+  font-size: 25px;
+}
+
+
+main span {
+  color: #ff6b35;
+}
+
+main hr {
+  width: 80%;
+  box-shadow: 4px 3px 4px rgb(0, 0, 0, 0.3);
+  border-color: #614ad9;
+}
+
+main button {
+  height: auto;
+  width: 190px;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+  background: rgb(0, 168, 107);
+  background: linear-gradient(93deg,
+      rgba(0, 168, 107, 1) 0%,
+      rgba(53, 196, 144, 1) 50%,
+      rgba(11, 233, 153, 1) 100%);
+  position: relative;
+  top: 30px;
+  color: #f6f5f5;
+  box-shadow: 1px 3px 3px rgb(0, 0, 0, 0.3);
+}
+
+.arrowLeftSliderMain,
+.arrowRightSliderMain {
+  position: absolute;
+  cursor: pointer;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5));
+  font-weight: 1000;
+  font-size: 40px;
+}
+
+.arrowLeftSliderMain {
+  left: 5px;
+  top: 40%;
+}
+
+.arrowRightSliderMain {
+  right: 5px;
+  top: 40%;
+}
+
+
+/* Fin main */
+
+/* Inicio article */
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 620px;
+}
+
+.encabezadoArticle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.encabezadoArticle h1 {
+  color: #907eeb;
+  font-size: 35px;
+}
+
+.contenidoArticle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+
+.contenidoArticle p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.contenidoArticle span {
+  color: #007acc;
+  font-weight: 600;
+}
+
+/* Fin article */
+
+/* Inicio simulador */
+
+.simuladorContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 620px;
+}
+
+.simuladorBanner {
+  display: flex;
+  width: 90%;
+  height: 350px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+
+.simuladorContenido {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 15px 0px 0px 15px;
+
+  background: rgb(65, 50, 140);
+  background: linear-gradient(90deg,
+      rgba(65, 50, 140, 1) 0%,
+      rgba(65, 50, 140, 1) 35%,
+      rgba(144, 126, 235, 1) 100%);
+}
+
+.simuladorContenido h1 {
+  color: #f6f5f5;
+  font-size: 30px;
+}
+
+.simuladorContenido p {
+  color: #f6f5f5;
+  font-size: 20px;
+}
+
+.simuladorContenido button {
+  color: #f6f5f5;
+  font-weight: bold;
+  height: auto;
+  width: 140px;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  font-size: 20px;
+  background: rgb(0, 122, 204);
+  background: linear-gradient(90deg,
+      rgba(0, 122, 204, 1) 0%,
+      rgba(0, 122, 204, 1) 35%,
+      rgba(107, 178, 249, 1) 100%);
+  box-shadow: 1px 3px 3px rgb(0, 0, 0, 0.3);
+}
+
+.simuladorBanner img {
+  width: 50%;
+  border-radius: 0px 15px 15px 0px;
+}
+
+/* Fin simulador */
+
+/* Inicio acompañamiento */
+
+.contenedorAcompañamiento {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  height: 620px;
+}
+
+.encabezadoAcompañamiento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.encabezadoAcompañamiento h1 {
+  color: #907eeb;
+  font-size: 30px;
+}
+
+.encabezadoAcompañamiento p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.afiliados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff6b35;
+  width: 80%;
+  height: 100px;
+  border-radius: 0px 15px 15px 0px;
+  color: #f6f5f5;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
+}
+
+.afiliados p {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Fin acompañamiento */
+
+/* Inicio cliente */
+
+.clienteContenedor {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 620px;
+  margin-bottom: 200px;
+  background-image: url(../img/personaDesarrollando.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.clienteContenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  width: 40%;
+  height: 50%;
+  padding: 20px;
+  margin-left: 60px;
+  border-radius: 20px;
+  background-color: rgb(160, 156, 184, 0.3);
+}
+
+.clienteContenedor h1 {
+  color: #f6f5f5;
+  font-size: 30px;
+}
+
+.clienteContenedor p {
+  color: #f6f5f5;
+  font-size: 20px;
+}
+
+.clienteContenedor button {
+  color: #f6f5f5;
+  font-weight: bold;
+  height: auto;
+  padding: 18px;
+  border-radius: 15px;
+  border: none;
+  font-size: 18px;
+  background: rgb(0, 122, 204);
+  background: linear-gradient(90deg,
+      rgba(0, 122, 204, 1) 0%,
+      rgba(0, 122, 204, 1) 35%,
+      rgba(107, 178, 249, 1) 100%);
+  box-shadow: 1px 3px 3px rgb(0, 0, 0, 0.3);
+  position: relative;
+  top: 20px;
+}
+
+/* fin cliente */
+
+/* Inicio footer */
+
+footer {
+  width: 100%;
+  height: auto;
+  background: rgb(19, 22, 28);
+  background: linear-gradient(90deg, rgba(19, 22, 28, 1) 0%, rgba(97, 74, 217, 1) 35%, rgba(144, 126, 235, 1) 100%);
+  padding: 30px 60px;
+}
+
+footer p {
+  text-align: center;
+  color: #f6f5f5;
+
+}
+
+.footerContenido {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logosAsociados {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.logoTuyaFooter,
+.logoCesdeFooter {
+  width: 120px;
+  height: 90px;
+  border-radius: 35px;
+}
+
+
+.atencion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.atencion p {
+  color: #f6f5f5;
+}
+
+.atencion ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  color: #f6f5f5;
+  list-style: none;
+  font-weight: lighter;
+}
+
+.logosRedes {
+  display: flex;
+  align-items: self-start;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+footer>p {
+  font-weight: lighter;
+  font-style: italic;
+}
+
+/* Fin footer */
+
+/* Inicio boton flotante */
+.botonAtencionFlotante {
+  background-color: #614AD9;
+  border-radius: 30px;
+  border: none;
+  padding: 10px;
+  position: fixed;
+  right: 30px;
+  top: 650px;
+  box-shadow: 1px 3px 3px rgb(0, 0, 0, 0.3);
+  transition: .5s;
+}
+
+.botonAtencionFlotante:hover {
+  padding: 15px;
+}
+
+.botonAtencionFlotante img {
+  width: 40px;
+}

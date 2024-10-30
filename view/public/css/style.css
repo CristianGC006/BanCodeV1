@@ -1,0 +1,1133 @@
+/* tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/* selector universal */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+.contenedorPersonasEmpresa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 5px;
+    gap: 5px;
+}
+
+.contenedorPersonasEmpresa nav a,
+.contenedorPersonasEmpresa nav span {
+    color: #614AD9;
+    font-weight: bold;
+}
+
+
+
+.contenedorPersonasEmpresa nav a:hover {
+    border-bottom: 2px solid #614AD9;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.contenedorInputModoNoche {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.contenedorInputModoNoche input {
+    height: 40px;
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+}
+
+.contenedorInputModoNoche section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorInputModoNoche button {
+    background-color: white;
+    border: none;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.contenedorInputModoNoche img {
+    width: 20px;
+    height: 20px;
+}
+
+/* header */
+
+header {
+    background: rgb(19, 22, 28);
+    background: linear-gradient(90deg, rgba(19, 22, 28, 1) 0%, rgba(97, 74, 217, 1) 35%, rgba(144, 126, 235, 1) 100%);
+    padding: 10px;
+    margin: 10px 0px;
+    width: 100%;
+    height: 260px;
+    transition: height 0.3s ease;
+}
+
+/* header menu hamburguesa */
+.headerMenuAbierto {
+    height: 65px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+header nav a {
+    color: #F6F5F5;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* ubicando logo y menu hamburguesa */
+header div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.contenedorNavBotonesHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* efecto menu hamburguesa */
+.contenedorNavBotonesHeaderOculta {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+}
+
+.botonHazteCliente,
+.botonIngresar {
+    height: auto;
+    width: auto;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    box-shadow: 1px 3px 3px rgb(0, 0, 0, 0.3);
+}
+
+.botonHazteCliente a {
+    color: #F6F5F5;
+}
+
+.botonHazteCliente {
+    background: rgb(255, 107, 53);
+    background: linear-gradient(90deg, rgba(255, 107, 53, 1) 0%, rgba(204, 86, 42, 1) 35%, rgba(153, 64, 32, 1) 100%);
+}
+
+.botonHazteCliente:hover {
+    background: rgb(0, 122, 204);
+    background: linear-gradient(90deg, rgba(0, 122, 204, 1) 0%, rgba(0, 122, 204, 1) 35%, rgba(107, 178, 249, 1) 100%);
+}
+
+.botonIngresar a {
+    color: #614AD9;
+}
+
+.botonIngresar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.botonIngresar:hover {
+    color: #F6F5F5;
+    background-color: #907EEB;
+}
+
+.botonIngresar img {
+    width: 25px;
+    height: 25px;
+}
+
+/* slider */
+
+main {
+    margin-top: 15px;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.contenedorEncabezadoTextoSlider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main h1 {
+    color: #453B3B;
+}
+
+main h1 span {
+    color: #00A86B;
+}
+
+main p {
+    color: #000000;
+    font-style: italic;
+    text-align: center;
+}
+
+main hr {
+    width: 85%;
+    box-shadow: 4px 3px 4px rgb(0, 0, 0, 0.3);
+    border-color: #614AD9;
+}
+
+main button {
+    background: rgb(0, 122, 204);
+    background: linear-gradient(90deg, rgba(0, 122, 204, 1) 0%, rgba(0, 122, 204, 1) 35%, rgba(107, 178, 249, 1) 100%);
+    font-weight: bold;
+    height: auto;
+    width: 190px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 25px;
+    border: none;
+    box-shadow: 1px 3px 3px rgb(0, 0, 0, 0.3);
+}
+
+main button:hover {
+    background: rgb(0, 168, 107);
+    background: linear-gradient(90deg, rgba(0, 168, 107, 1) 0%, rgba(0, 168, 107, 1) 50%, rgba(61, 240, 147, 1) 100%);
+}
+
+main button a {
+    color: #F6F5F5
+}
+
+.arrowLeftSliderMain,
+.arrowRightSliderMain {
+    position: absolute;
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5));
+    cursor: pointer;
+    font-weight: 1000;
+    font-size: 25px;
+}
+
+.arrowLeftSliderMain {
+    left: 5px;
+    top: 40%;
+}
+
+.arrowRightSliderMain {
+    right: 5px;
+    top: 40%;
+}
+
+main img {
+    width: 300px;
+    height: 200px;
+}
+
+/* autorizacion */
+
+.contenedorAutorizacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 90px 0px;
+    padding: 10px;
+    gap: 15px;
+}
+
+
+.contenedorEncabezadoImgAutorizacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorAutorizacion section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contenedorEncabezadoImgAutorizacion h3 {
+    font-weight: 500;
+}
+
+.contenedorEncabezadoImgAutorizacion img {
+    width: 100px;
+}
+
+
+.imgAutorizados {
+    width: 300px;
+}
+
+.parrafoAutorizacion {
+    color: #13161C;
+    font-style: italic;
+    font-weight: 200;
+    text-align: justify;
+}
+
+/* simulacion credito estudiantil */
+.contenedorSimulacionCredito {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.contenedorEncabezadoCredito {
+    display: flex;
+    flex-direction: column;
+    background: rgb(65, 50, 140);
+    background: linear-gradient(90deg, rgba(65, 50, 140, 1) 0%, rgba(65, 50, 140, 1) 35%, rgba(144, 126, 235, 1) 100%);
+    border-radius: 15px;
+    width: 100%;
+    gap: 30px;
+}
+
+.contenedorEncabezadoCredito div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F6F5F5;
+    text-align: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.contenedorEncabezadoCredito img {
+    width: 100%;
+    border-radius: 0px 0px 15px 15px;
+
+}
+
+.contenedorEncabezadoCredito button {
+    color: #F6F5F5;
+    font-weight: bold;
+    height: auto;
+    width: 120px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    background: rgb(0, 122, 204);
+    background: linear-gradient(90deg, rgba(0, 122, 204, 1) 0%, rgba(0, 122, 204, 1) 35%, rgba(107, 178, 249, 1) 100%);
+    box-shadow: 1px 3px 3px rgb(0, 0, 0, 0.3);
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.contenedorEncabezadoCredito button:hover {
+    background: rgb(255, 107, 53);
+    background: linear-gradient(90deg, rgba(255, 107, 53, 1) 0%, rgba(204, 86, 42, 1) 35%, rgba(153, 64, 32, 1) 100%);
+}
+
+
+/* seccion beneficios */
+.contenedorBeneficios {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contenedorBeneficios h3 {
+    text-align: center;
+    color: #907EEB;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.contenedorImagenesBeneficios {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 400px;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+
+.contenedorImgCashback img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.contenedorImgInversionFinancieras img {
+    width: 100%;
+    height: 180px;
+}
+
+
+.contenedorImgInversionFinancieras {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contenedorImgEstudiantilInternacional {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    grid-column: 1/3;
+}
+
+.contenedorImgEstudiantilInternacional img {
+    width: 100%;
+}
+
+.contenedorImagenesBeneficios img {
+    border-radius: 35px;
+}
+
+
+/* page preguntas frecuentes */
+
+.contenedorPreguntasFrecuentes {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+}
+
+.contenedorPreguntasFrecuentes h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.preguntaUno,
+.preguntaDos,
+.preguntaTres,
+.preguntaCuatro {
+    height: auto;
+    width: 100%;
+    background-color: #614AD9;
+    opacity: 85%;
+    border-radius: 35px;
+    padding: 20px;
+    color: #F8F9FA;
+    box-shadow: 0px 1px 5px black;
+}
+
+.preguntaUno div,
+.preguntaDos div,
+.preguntaTres div,
+.preguntaCuatro div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+/*flecha de preguntas frecuentes */
+.flechaPreguntasFrecuentes {
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 1px white);
+}
+
+ul {
+    list-style: none;
+}
+
+.contenedorPreguntasFrecuentes ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* nuestros productos */
+
+.contenedorNuestrosProductos {
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.contenedorNuestrosProductos h2 {
+    color: #907EEB;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.contenedorNuestrosProductos span {
+    position: absolute;
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5));
+    cursor: pointer;
+    font-weight: 1000;
+    color: #007ACC;
+    font-size: 25px;
+}
+
+.arrowLeftSliderNp {
+    top: 55%;
+    left: 5px;
+}
+
+.arrowRightSliderNp {
+    top: 55%;
+    right: 5px;
+}
+
+.contenedorImagenesNuestrosProductos {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 55%;
+}
+
+.contenedorImagenesNuestrosProductos img {
+    border-radius: 30px;
+    width: 70%;
+    height: 90%;
+}
+
+/* seccion conviertete en cliente */
+
+.contenedorConvierteteCliente {
+    width: 100%;
+    background-image: url(../img/computadorTrabajoDesarrollo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    margin-top: 50px;
+    color: #F6F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorUnete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+    border-radius: 35px;
+    background: rgb(19, 22, 28);
+    background: linear-gradient(119deg, rgba(19, 22, 28, 1) 0%, rgba(19, 22, 28, 1) 35%, rgba(126, 138, 150, 0.65) 100%);
+    height: 50%;
+    width: 90%;
+}
+
+.contenedorUnete p {
+    text-align: center;
+}
+
+.contenedorUnete button {
+    color: #F6F5F5;
+    background-color: #FF6B35;
+    padding: 18px;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+}
+
+/* footer */
+
+footer {
+    height: auto;
+    width: 100%;
+    background: rgb(19, 22, 28);
+    background: linear-gradient(90deg, rgba(19, 22, 28, 1) 0%, rgba(97, 74, 217, 1) 35%, rgba(144, 126, 235, 1) 100%);
+    margin-top: 80px;
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+footer p,
+footer ul li,
+footer h4 {
+    color: #F6F5F5;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contenedorLogosFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoTuyaFooter,
+.logoCesdeFooter {
+    width: 20%;
+    border-radius: 35px;
+}
+
+.contenedorLineasFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.contenedorLineasFooter h4 {
+    font-style: italic;
+}
+
+.contenedorLineasFooter ul li {
+    font-weight: lighter;
+}
+
+.contenedorLineasFooter ul {
+    display: flex;
+}
+
+
+.contenedorRedesFooter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+footer>p {
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+/* boton atencion al cliente */
+
+.botonAtencionFlotante {
+    background-color: #614AD9;
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    top: 565px;
+    box-shadow: 1px 3px 3px rgb(0, 0, 0, 0.3);
+    transition: .5s;
+}
+
+.botonAtencionFlotante:hover {
+    padding: 15px;
+
+}
+
+.botonAtencionFlotante img {
+    width: 40px;
+}
+
+/* media query tablet */
+@media(min-width: 768px) and (max-width:997px) {
+    .contenedorPersonasEmpresa {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contenedorInputModoNoche {
+        gap: 10px;
+    }
+
+    .contenedorInputModoNoche input {
+        width: 410px;
+        height: 40px;
+    }
+
+    .contenedorInputModoNoche img {
+        width: 25px;
+        height: 25px;
+    }
+
+    /*contenedor simulacion credito */
+    .contenedorSimulacionCredito {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedorEncabezadoCredito {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 500px;
+        width: 70%;
+    }
+
+    .contenedorEncabezadoCredito div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .contenedorEncabezadoCredito img {
+        height: 270px
+    }
+
+    /* contenedor beneficios */
+    .contenedorBeneficios {
+        margin-top: 100px;
+    }
+
+    .contenedorImagenesBeneficios {
+        display: grid;
+        grid-template-columns: 27% 32% 38%;
+        grid-template-rows: 390px;
+        gap: 10px;
+    }
+
+
+    .contenedorImgInversionFinancieras img {
+        height: 50%;
+    }
+
+    .contenedorImgEstudiantilInternacional {
+        grid-column: 3/4;
+    }
+
+    .imageEstudiantil {
+        height: 70%;
+    }
+
+    .imageBancaInternacional {
+        height: 30%;
+    }
+
+    /* convierte en cliente */
+
+
+    .contenedorUnete {
+        width: 50%;
+        height: 60%;
+    }
+
+    /* footer */
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    footer section {
+        width: 100%;
+    }
+
+    .contenedorLogosFooter {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .logoTuyaFooter,
+    .logoCesdeFooter {
+        width: 100px;
+        height: 80px;
+    }
+
+
+
+    .contenedorLineasFooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedorLineasFooter ul {
+        gap: 130px;
+
+    }
+
+
+    .contenedorRedesFooter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+}
+
+/* media query desktop */
+@media(min-width: 998px) {
+
+    .contenedorPersonasEmpresa {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contenedorInputModoNoche {
+        gap: 20px;
+    }
+
+    .contenedorInputModoNoche input {
+        width: 450px;
+        height: 40px;
+    }
+
+    .contenedorInputModoNoche img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        height: 65px;
+    }
+
+    .contenedorNavBotonesHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+
+    }
+
+
+    .contenedorNavBotonesHeader nav {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .menuHamburguesa {
+        display: none;
+    }
+
+    /* slider */
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 500px;
+    }
+
+    .contenedorEncabezadoTextoSlider {
+        gap: 15px;
+    }
+
+    .contenedorEncabezadoTextoSlider h1 {
+        font-size: 50px;
+    }
+
+    .contenedorEncabezadoTextoSlider p {
+        font-size: 25px;
+    }
+
+    .contenedorEncabezadoTextoSlider button {
+        margin-top: 30px;
+    }
+
+    .arrowLeftSliderMain,
+    .arrowRightSliderMain {
+        font-size: 40px;
+    }
+
+    main img {
+        width: 490px;
+        height: 350px;
+    }
+
+    /* seccion autorizacion */
+    .contenedorAutorizacion {
+        display: flex;
+        flex-direction: row;
+    }
+
+    A {
+        width: 520px;
+        height: 350px;
+    }
+
+    .contenedorEncabezadoImgAutorizacion h3 {
+        font-size: 30px;
+    }
+
+    .contenedorEncabezadoImgAutorizacion img {
+        width: 180px;
+        height: 70px;
+    }
+
+    .parrafoAutorizacion {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* seccion simulacion credito */
+
+    .contenedorSimulacionCredito {
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedorEncabezadoCredito {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 70%;
+        width: 90%;
+    }
+
+
+    .contenedorEncabezadoCredito div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-left: 7%;
+    }
+
+    .contenedorEncabezadoCredito h2 {
+        font-size: 35px;
+    }
+
+    .contenedorEncabezadoCredito p {
+        font-size: 18px;
+    }
+
+
+    .contenedorEncabezadoCredito img {
+        width: 50%;
+        border-radius: 0px 15px 15px 0px;
+    }
+
+    /* beneficios */
+
+    .contenedorBeneficios h3 {
+        font-size: 35px
+    }
+
+    .contenedorBeneficios {
+        padding: 15px;
+    }
+
+    .contenedorImagenesBeneficios {
+        display: grid;
+        grid-template-columns: 25% 30% 41%;
+        grid-template-rows: 700px;
+        gap: 30px;
+    }
+
+    .contenedorImgInversionFinancieras {
+        gap: 30px;
+    }
+
+    .contenedorImgInversionFinancieras img {
+        width: 100%;
+        height: 50%;
+    }
+
+
+    .contenedorImgEstudiantilInternacional {
+        gap: 30px;
+        grid-column: 3/4;
+    }
+
+    /* imagenes 3era seccion de beneficios */
+    .imageEstudiantil {
+        height: 70%;
+    }
+
+    .imageBancaInternacional {
+        height: 30%;
+    }
+
+
+    /* contenedor preguntas frecuentes */
+
+    .contenedorPreguntasFrecuentes h2 {
+        font-size: 35px;
+    }
+
+    .contenedorPreguntasFrecuentes {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .preguntaUno,
+    .preguntaDos,
+    .preguntaTres,
+    .preguntaCuatro {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+
+
+    /* nuestros productos */
+
+    .contenedorNuestrosProductos h2 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .contenedorImagenesNuestrosProductos img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contenedorNuestrosProductos span {
+        font-size: 50px;
+        top: 50%;
+    }
+
+    .arrowLeftSliderNp {
+        left: 10px;
+    }
+
+    .arrowRightSliderNp {
+        right: 10px;
+    }
+
+    /*conviertete nuestro cliente */
+
+    .contenedorConvierteteCliente {
+        margin-top: 70px;
+        display: flex;
+        justify-content: flex-start;
+        height: 600px;
+    }
+
+    .contenedorUnete {
+        width: 30%;
+        height: 50%;
+        margin-left: 120px;
+    }
+
+    .contenedorUnete button {
+        margin-top: 30px;
+    }
+
+
+    /* footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contenedorLogosFooter {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .logoTuyaFooter,
+    .logoCesdeFooter {
+        width: 120px;
+        height: 90px;
+    }
+
+
+    footer>section {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: self-start;
+    }
+
+    .contenedorLineasFooter {
+        margin-top: 60px;
+    }
+
+    .contenedorLineasFooter ul {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+
+    /*boton atencion al cliente*/
+    .botonAtencionFlotante {
+        top: 650px;
+        right: 30px;
+    }
+
+}

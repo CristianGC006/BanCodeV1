@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*seccion izquierda*/
+
+.contenedorIngreso {
+    width: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*contenedor izquierdo*/
+
+.contenedorFormLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contenedorFormLogin form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/*titulo izquierdo*/
+
+.tituloIngresa {
+    font-weight: bold;
+    font-size: 48px;
+}
+
+
+/*barra de escribir el usuario izquierdo*/
+
+.usuario {
+    width: 429px;
+    height: 72px;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    border: #d9d9d9 solid 1px;
+}
+
+
+/*barra de escribir la contraseña izquierdo*/
+
+.contrasena {
+    width: 429px;
+    height: 72px;
+    background-color: #d9d9d9;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    border: #d9d9d9 solid 1px;
+}
+
+.usuario,
+.contrasena {
+    padding: 0px 20px;
+}
+
+
+/*enlace de olvidaste la contraseña izquierdo */
+
+.olvidaste {
+    color: black;
+    opacity: 50%;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/*boton ingresar izquierdo*/
+
+.ingresar {
+    width: 185px;
+    height: 56px;
+    border: solid 1px white;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 32px;
+    background-color: #614AD9;
+    cursor: pointer;
+}
+
+.ingresar a {
+    color: white;
+}
+
+/*aside derecha*/
+
+aside {
+    width: 50%;
+    height: 100%;
+    background: rgb(19, 22, 28);
+    background: linear-gradient(90deg, rgba(19, 22, 28, 1) 0%, rgba(97, 74, 217, 1) 35%, rgba(144, 126, 235, 1) 100%);
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+/*contenedor derecho*/
+
+.sectionAside {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+
+/*titulo derecha*/
+
+.tituloHola {
+    color: white;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+
+/*texto derecha*/
+
+.texto {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    top: 70px;
+}
+
+
+/*boton derecha*/
+
+.registro {
+    width: 232px;
+    height: 71px;
+    border: solid 2px white;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    top: 40px;
+}
+
+.registro a {
+    color: #614AD9;
+}
