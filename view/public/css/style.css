@@ -40,6 +40,7 @@ body {
 
 .contenedorPersonasEmpresa nav a:hover {
     border-bottom: 2px solid #614AD9;
+  
 }
 
 
@@ -170,20 +171,32 @@ header div {
     background: linear-gradient(90deg, rgba(0, 122, 204, 1) 0%, rgba(0, 122, 204, 1) 35%, rgba(107, 178, 249, 1) 100%);
 }
 
-.botonIngresar a {
+/* .botonIngresar a {
     color: #614AD9;
-}
+} */
 
-.botonIngresar {
-    display: flex;
+.botonIngresar{
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 2px;
+    align-items: center; */
+    gap: 1px;
+    color: #907EEB;
+    background-color: white;
 }
-
-.botonIngresar:hover {
-    color: #F6F5F5;
+#aBotonIngresar{
+    color: #907EEB;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+#aBotonIngresar:hover{
+    color: white;
+    transition: ease 0.5s;
+}
+.botonIngresar:hover{
+    color: white;
     background-color: #907EEB;
+    transition: ease 0.5s;
 }
 
 .botonIngresar img {
