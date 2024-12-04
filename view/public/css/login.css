@@ -123,10 +123,14 @@ body {
     font-size: 32px;
     background-color: #614AD9;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .ingresar a {
     color: white;
+}
+.ingresar:hover{
+    background-color: #00A86B;
 }
 
 /*aside derecha*/
@@ -192,8 +196,75 @@ aside {
     cursor: pointer;
     position: relative;
     top: 40px;
+    transition: all 0.5s ease;
 }
 
-.registro a {
+.registro:hover{
+    background-color: #000000;
+
+}
+.registro{
     color: #614AD9;
+}
+
+input {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#error{
+    position:absolute;
+    top: 80%;
+}
+
+input.error {
+    border-color: red;
+}
+
+input.success {
+    border-color: green;
+}
+
+/* Boton para volver a la pagina principal*/
+
+.btnHome {
+    left: 18.2%;
+    width: 220px;
+    height: 56px;
+    background-color: #614AD9;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btnHome:hover{
+    background-color: #00A86B;
+}
+
+input:focus{
+    animation: changeColor 2s forwards;
+    color:white
+}
+
+@keyframes changeColor {
+    0% {
+        background-position: 0% 0%;
+        background-color: #ccc;
+    }
+    50% {
+        background-position: 50% 0%;
+        background-color: #614AD9;
+    }
+    100% {
+        background-position: 100% 0%;
+        background-color: #614AD9;
+    }
 }

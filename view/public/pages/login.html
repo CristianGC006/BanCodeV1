@@ -22,21 +22,22 @@
             <h1 class="tituloIngresa">Ingresa</h1>
             <!--barra para escribir el usuario-->
 
-            <form action="">
-                <input class="usuario" placeholder="Usuario" type="email" name="" id="">
-                <!--barra para escribir la contraseña-->
-
-                <input class="contrasena" placeholder="contraseña" type="password" name="" id="">
-                <!-- enlace de olvidaste la contraseña-->
-                <a class="olvidaste" href="">¿Olvido su contraseña?</a>
-                <!-- boton de ingresar-->
-                <button class="ingresar"><a href="../../../index.html">Ingresar</a></button>
-
+            <form id="formLogin">
+                <input class="usuario" placeholder="Usuario" type="email" id="usuario" required>
+                <input class="contrasena" placeholder="Contraseña" type="password" id="contrasena" required>
+                <!-- enlace de olvidaste la contraseña -->
+                <a class="olvidaste" href="#">¿Olvidó su contraseña?</a>
+                <!-- botón de ingresar -->
+                <button type="submit" class="ingresar">Ingresar</button>
+                <div class="btnHome">Pagina Principal</div>
             </form>
+            <div id="error" style="color: red; margin-top: 10px;"></div>
+            
 
         </section>
 
     </section>
+    
     <aside>
         <!--contenedor derecho-->
         <section class="sectionAside">
@@ -45,9 +46,11 @@
             <!-- texto -->
             <p class="texto">Construyamos tu futuro juntos, que esperas y únete a BanCode!</p>
             <!-- boton de registro-->
-            <button class="registro"> <a href="./registro.html">Registrate</a></button>
+            <button class="registro">Registrate</a></button>
         </section>
     </aside>
+
+    <script src="../js/login.js"></script>
 </body>
 
 </html>

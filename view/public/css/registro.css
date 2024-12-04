@@ -84,9 +84,14 @@ aside {
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.5s ease;
 }
 
-.ingresar a {
+.ingresar:hover{
+    background-color: #000000;
+
+}
+.ingresar{
     color: #614AD9;
 }
 
@@ -174,7 +179,7 @@ aside {
 
 /*barra de vereficar la contraseña*/
 
-.vereficar {
+.verificar {
     width: 429px;
     height: 72px;
     background-color: #d9d9d9;
@@ -182,7 +187,7 @@ aside {
     font-size: 32px;
     font-weight: bold;
     color: black;
-    border: #d9d9d9 solid 1px;
+    border: solid 1px #d9d9d9;
 }
 
 .usuario,
@@ -190,6 +195,7 @@ aside {
 .vereficar {
     padding: 0px 20px;
 }
+
 
 /*boton de registrar*/
 
@@ -200,10 +206,80 @@ aside {
     border-radius: 20px;
     font-size: 32px;
     font-weight: bold;
-    border: solid 1px #614AD9;
+    border: none;
     cursor: pointer;
+    transition: 0.5s;
+
 }
 
 .ingreso a {
     color: #F6F5F5;
+}
+
+.ingreso:hover{
+    background-color: #00A86B;
+}
+
+
+
+input {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#error{
+    position:absolute;
+    top: 59%;
+}
+
+input.error {
+    border-color: red;
+}
+
+input.success {
+    border-color: green;
+}
+
+/* Boton para volver a la pagina principal*/
+
+.btnHome {
+    right: 18.2%;
+    width: 240px;
+    height: 56px;
+    background-color: #614AD9;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btnHome:hover{
+    background-color: #00A86B;
+}
+
+input:focus{
+    animation: changeColor 2s forwards;
+    color:white
+}
+
+@keyframes changeColor {
+    0% {
+        background-position: 0% 0%;
+        background-color: #ccc;
+    }
+    50% {
+        background-position: 50% 0%;
+        background-color: #614AD9;
+    }
+    100% {
+        background-position: 100% 0%;
+        background-color: #614AD9;
+    }
 }

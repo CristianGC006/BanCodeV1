@@ -176,23 +176,11 @@ header div {
 } */
 
 .botonIngresar{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     gap: 1px;
     color: #907EEB;
     background-color: white;
 }
-#aBotonIngresar{
-    color: #907EEB;
-    font-weight: bold;
-    font-size: 18px;
-    text-decoration: none;
-}
-#aBotonIngresar:hover{
-    color: white;
-    transition: ease 0.5s;
-}
+
 .botonIngresar:hover{
     color: white;
     background-color: #907EEB;
@@ -257,6 +245,7 @@ main button {
     font-size: 25px;
     border: none;
     box-shadow: 1px 3px 3px rgb(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 main button:hover {
