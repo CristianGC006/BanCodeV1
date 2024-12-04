@@ -26,10 +26,10 @@
                 Ingresa tus datos
             </p>
             <!-- boton de ingreso -->
-            <button class="ingresar"> <a href="login.html">Ingresar</a></button>
+            <button class="ingresar">Ingresar</button>
         </section>
     </aside>
-
+    
     <section class="contenedorRegistro">
         <!-- contenedor derecha  -->
         <section class="cuadroRegistro">
@@ -40,21 +40,18 @@
             <!-- subtitulo de ingresar el usuario -->
             <h4 class="tituloUsuario">Ingrese su usuario o correo electronico</h4>
             <!-- barra para escribir el usuario-->
-            <form action="">
-                <input class="usuario" placeholder="Usuario" type="email" name="" id="">
-                <!-- subtitulo de igresar la contraseña -->
+            <form id="formRegistro">
+                <input class="usuario" placeholder="Usuario" type="email" id="email" required>
                 <h4 class="tituloContrasena">Ingrese su contraseña</h4>
-                <!-- barra para escribir la contraseña -->
-                <input class="contrasena" placeholder="Contraseña" type="password" name="" id="">
-                <!-- barra para vereficar la contraseña -->
-                <input class="vereficar" placeholder="Verefique su contraseña" type="password" name="" id="">
-                <!-- boton de registro -->
-                <button class="ingreso"> <a href="login.html">Registrar</a></button>
+                <input class="contrasena" placeholder="Contraseña" type="password" id="password" required>
+                <input class="verificar" placeholder="Verifique su contraseña" type="password" id="passwordConfirm" required>
+                <button type="submit" class="ingreso">Registrar</button>
+                <div class="btnHome">Pagina Principal</div>
             </form>
-        </section>
-
+            <div id="error" style="color: red; margin-top: 10px;"></div>
+            
     </section>
-
+    <script type="module" src="../js/registro.js"></script>
 </body>
 
 </html>
